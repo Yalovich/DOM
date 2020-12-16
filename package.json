@@ -1,6 +1,6 @@
 {
   "name": "@yalovich/dom",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "description": "Tiny DOM wrapper for micro-animations and website building.",
   "main": "src/index.js", 
   "scripts": {
@@ -15,9 +15,10 @@
     "dom"
   ],
   "author": "Idan Yalovich (yalovich.com)",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Yalovich/dom/issues"
+    "url": "https://github.com/Yalovich/dom/issues",
+    "email": "idan.yalovich@gmail.com"
   },
   "homepage": "https://github.com/Yalovich/dom#readme"
 }

@@ -6,7 +6,6 @@ exports.Dom = (function() {
     {
         constructor(debug = false)
         {
-            console.log("IN");
         }
 
         /**
@@ -375,7 +374,7 @@ exports.Dom = (function() {
         }
 
         /**
-         * Hide element using CSS >> block: block|inline|grid|flex|inline-flex;
+         * Show element using CSS >> block: block|inline|grid|flex|inline-flex;
          * @param {string|HTMLElement} selector
          * @param {string} displayType
          * @returns {HTMLElement}
