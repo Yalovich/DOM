@@ -68,8 +68,8 @@ Method               | Description
 `.heightCenter(selector)` | Returns element height center point
 `.width(selector)` | Returns the element computed width as number
 `.widthCenter(element)` | Returns element width center point
-`.hide(selector, softHide = false)` | Hide element using CSS >> block: none;
-`.show(selector, displayType)` | Show element using CSS >> block: block|inline|grid|flex|inline-flex;
+`.hide(selector, softHide = false)` | Hide element using CSS >> display: none;
+`.show(selector, displayType = "block")` | Show element using CSS >> display: block|inline|grid|flex|inline-flex;
 **getter** `.scrollTop` | Returns scrolling distance from the top.
 **getter** `.winWidth` | Returns the window inner width
 **getter** `.winHeight` | Returns the window inner height
