@@ -386,6 +386,47 @@ exports.Dom = (function() {
             this.css(selector, "display", displayType);
             return this.css(selector, "visibility", "visible");
         }
+
+        /**
+         * Returns selector value 
+         * @param {string|HTMLElement} selector 
+         */
+        value(selector)
+        {
+            return this.elm(selector).value;
+        }
+
+        /**
+         * Returns attribution value for supplied selector
+         * @param {string|HTMLElement} selector 
+         * @param {string} key 
+         * @param {*} returnDefault 
+         */
+        attr(selector, key, returnDefault = null)
+        {
+            let elm = this.elm(selector);
+            if(!elm) return returnDefault;
+
+            return elm.getAttribute(key);
+        }
+
+        /**
+         * Inquiry helper for boolean features.
+         * Example:
+         *  this.dom.is("#checkbox").checked ? "Yes": "No";
+         * @param {string|HTMLElement} selector 
+         */
+        is(selector)
+        {
+            let elm = this.elm(selector);
+            if(!elm) console.warn("Using .is() with null element may cuase failures");
+
+            return new class {
+                get checked() {
+                    return this.attr(elm, "type") === "checkbox" && elm.checked
+                }
+            }
+        }
     }
 
     return Dom;
