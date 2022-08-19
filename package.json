@@ -1,6 +1,6 @@
 {
   "name": "@yalovich/dom",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Dom is a JavaScript wrapper built for making DOM interactions easy and intuitive when working with JS Vanilla. ",
   "main": "src/index.js", 
   "scripts": {

@@ -127,7 +127,7 @@ exports.Dom = (function() {
         {
             if(typeof(elm) === "string") elm = this.elm(elm);
 
-            if(!selector) {
+            if(!elm) {
                 console.warn("Unknown element for selector [", selector, "]");
                 return null;
             }
@@ -424,6 +424,21 @@ exports.Dom = (function() {
             return new class {
                 get checked() {
                     return this.attr(elm, "type") === "checkbox" && elm.checked
+                }
+            }
+        }
+
+        input(selector)
+        {
+            let elm = this.elm(selector);
+            if(!elm) console.warn("Using .input() with null element may cuase failures"); 
+
+            return new class {
+                selectAndCopy() {
+                    if(!elm) return false;
+                    elm.focus();elm.select();
+                    document.execCommand("copy");
+                    return true;
                 }
             }
         }

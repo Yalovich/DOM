@@ -70,9 +70,20 @@ Method               | Description
 `.widthCenter(element)` | Returns element width center point
 `.hide(selector, softHide = false)` | Hide element using CSS >> display: none;
 `.show(selector, displayType = "block")` | Show element using CSS >> display: block|inline|grid|flex|inline-flex;
+`.is(selector)` | Inquiry helper for boolean features. See .is Inquery
+`.input(selector)` | Inquiry helper for input handling. See .input Inquery
 **getter** `.scrollTop` | Returns scrolling distance from the top.
 **getter** `.winWidth` | Returns the window inner width
 **getter** `.winHeight` | Returns the window inner height
+
+
+### The `.is()` Inquery
+
+Making DOM elemnts available to 
+
+### The `.input()` Inquery
+
+More info here 
 
 ### Contributions or Suggestions
 
